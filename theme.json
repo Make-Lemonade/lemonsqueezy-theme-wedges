@@ -1,0 +1,262 @@
+{
+    "id": "@make-lemonade/lemonsqueezy-theme",
+    "meta": {
+        "name": "@make-lemonade/lemonsqueezy-theme",
+        "description": ""
+    },
+    "settings": [],
+    "wedges": [
+        {
+            "name": "ExampleWedge",
+            "component": "wedges/ExampleWedge.vue",
+            "settings": [],
+            "elements": []
+        }
+    ],
+    "elements": [
+        {
+            "name": "LsAccordion",
+            "component": "node_modules/@lemonsqueezy/theme-elements/src/components/LsAccordion.vue",
+            "settings": [
+                {
+                    "id": "items",
+                    "type": "repeater",
+                    "label": "Items",
+                    "fields": {
+                        "title": {
+                            "default": "",
+                            "input": {
+                                "type": "text",
+                                "label": "Title",
+                                "placeholder": "Enter title here...",
+                                "validate": "string"
+                            }
+                        },
+                        "content": {
+                            "default": "",
+                            "input": {
+                                "type": "textarea",
+                                "label": "Content",
+                                "placeholder": "Enter content here...",
+                                "validate": "string"
+                            }
+                        },
+                        "open": {
+                            "default": false,
+                            "input": {
+                                "type": "checkbox",
+                                "label": "Open"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LsButton",
+            "component": "node_modules/@lemonsqueezy/theme-elements/src/components/LsButton.vue",
+            "settings": [
+                {
+                    "id": "text",
+                    "type": "text",
+                    "label": "Text",
+                    "placeholder": "Call to action...",
+                    "validate": "string"
+                },
+                {
+                    "id": "link",
+                    "type": "text",
+                    "label": "Link",
+                    "placeholder": "https://example.com",
+                    "validate": "string"
+                },
+                {
+                    "id": "target",
+                    "type": "select",
+                    "label": "Target",
+                    "options": [
+                        {
+                            "label": "Same Window",
+                            "value": "_self"
+                        },
+                        {
+                            "label": "New Window",
+                            "value": "_blank"
+                        }
+                    ]
+                },
+                {
+                    "id": "fontSize",
+                    "type": "text",
+                    "label": "Font Size",
+                    "placeholder": "16px",
+                    "validate": "string"
+                },
+                {
+                    "id": "fontWeight",
+                    "type": "text",
+                    "label": "Font Weight",
+                    "placeholder": "bold",
+                    "validate": "string"
+                }
+            ]
+        },
+        {
+            "name": "LsHeading",
+            "component": "node_modules/@lemonsqueezy/theme-elements/src/components/LsHeading.vue",
+            "settings": [
+                {
+                    "id": "content",
+                    "type": "textarea",
+                    "label": "Content",
+                    "placeholder": "Enter content here...",
+                    "validate": "string"
+                },
+                {
+                    "id": "fontSize",
+                    "type": "text",
+                    "label": "Font Size",
+                    "placeholder": "16px",
+                    "validate": "string"
+                },
+                {
+                    "id": "fontWeight",
+                    "type": "text",
+                    "label": "Font Weight",
+                    "placeholder": "bold",
+                    "validate": "string"
+                },
+                {
+                    "id": "lineHeight",
+                    "type": "text",
+                    "label": "Line Height",
+                    "placeholder": "1.5em",
+                    "validate": "string"
+                }
+            ]
+        },
+        {
+            "name": "LsIcon",
+            "component": "node_modules/@lemonsqueezy/theme-elements/src/components/LsIcon.vue",
+            "settings": [
+                {
+                    "id": "iconSet",
+                    "type": "select",
+                    "label": "Icon Set",
+                    "options": [
+                        {
+                            "label": "Iconic",
+                            "value": "iconic"
+                        }
+                    ]
+                },
+                {
+                    "id": "icon",
+                    "type": "iconpicker",
+                    "label": "Icon"
+                },
+                {
+                    "id": "size",
+                    "type": "text",
+                    "label": "Size",
+                    "placeholder": "40px",
+                    "validate": "string"
+                },
+                {
+                    "id": "backgroundColor",
+                    "type": "color",
+                    "label": "Background Color",
+                    "placeholder": "#7047eb",
+                    "validate": "string"
+                },
+                {
+                    "id": "color",
+                    "type": "color",
+                    "label": "Color",
+                    "placeholder": "#ffffff",
+                    "validate": "string"
+                },
+                {
+                    "id": "borderRadius",
+                    "type": "text",
+                    "label": "Border Radius",
+                    "placeholder": "40px",
+                    "validate": "string"
+                }
+            ]
+        },
+        {
+            "name": "LsMedia",
+            "component": "node_modules/@lemonsqueezy/theme-elements/src/components/LsMedia.vue",
+            "settings": [
+                {
+                    "id": "type",
+                    "type": "select",
+                    "label": "Type",
+                    "options": [
+                        {
+                            "label": "Image",
+                            "value": "image"
+                        },
+                        {
+                            "label": "Video",
+                            "value": "video"
+                        }
+                    ]
+                },
+                {
+                    "id": "url",
+                    "type": "file",
+                    "label": "Media",
+                    "validate": "url"
+                }
+            ]
+        },
+        {
+            "name": "LsMenu",
+            "component": "node_modules/@lemonsqueezy/theme-elements/src/components/LsMenu.vue",
+            "settings": [
+                {
+                    "id": "items",
+                    "type": "menu",
+                    "label": "Items"
+                }
+            ]
+        },
+        {
+            "name": "LsText",
+            "component": "node_modules/@lemonsqueezy/theme-elements/src/components/LsText.vue",
+            "settings": [
+                {
+                    "id": "content",
+                    "type": "textarea",
+                    "label": "Content",
+                    "placeholder": "Enter content here...",
+                    "validate": "string"
+                },
+                {
+                    "id": "fontSize",
+                    "type": "text",
+                    "label": "Font Size",
+                    "placeholder": "16px",
+                    "validate": "string"
+                },
+                {
+                    "id": "fontWeight",
+                    "type": "text",
+                    "label": "Font Weight",
+                    "placeholder": "bold",
+                    "validate": "string"
+                },
+                {
+                    "id": "lineHeight",
+                    "type": "text",
+                    "label": "Line Height",
+                    "placeholder": "1.5em",
+                    "validate": "string"
+                }
+            ]
+        }
+    ],
+    "templates": []
+}

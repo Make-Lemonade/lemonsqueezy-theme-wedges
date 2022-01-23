@@ -1,0 +1,26 @@
+{
+  "name": "@make-lemonade/lemonsqueezy-theme",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "peerDependencies": {
+    "vue": "^2"
+  },
+  "dependencies": {
+    "@lemonsqueezy/gridsome-lemonsqueezy": "^0.1",
+    "@lemonsqueezy/theme-elements": "^0.1",
+    "@lemonsqueezy/theme-renderer": "^0.1",
+    "gridsome": "^0.7.23"
+  },
+  "devDependencies": {
+    "@lemonsqueezy/theme-schema": "^0.1",
+    "autoprefixer": "^9",
+    "eslint": "^8.4.1",
+    "eslint-plugin-vue": "^8.2.0",
+    "postcss": "^8",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  }
+}
